@@ -1,14 +1,15 @@
 place these two files in a subfolder 'MyStepper' in the arduino libraries folder
 
 With this library you can define a stop-check function bij defining a function like this:
-'''
+
+
 bool checkForceStop() {  
   if(!digitalRead(STOP_MICROSWITCH)) {
     return true;
   }
   return false;
 }
-'''
+
 
 Then call the Step function like:
 
